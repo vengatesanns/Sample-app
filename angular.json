@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "black-dashboard-angular": {
+    "sample-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "black-dashboard-angular:build"
+            "browserTarget": "sample-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "black-dashboard-angular:build:production"
+              "browserTarget": "sample-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "black-dashboard-angular:build"
+            "browserTarget": "sample-angular:build"
           }
         },
         "test": {
@@ -113,7 +113,7 @@
         }
       }
     },
-    "black-dashboard-angular-e2e": {
+    "sample-angular-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -122,11 +122,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "black-dashboard-angular:serve"
+            "devServerTarget": "sample-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "black-dashboard-angular:serve:production"
+              "devServerTarget": "sample-angular:serve:production"
             }
           }
         },
@@ -142,5 +142,5 @@
       }
     }
   },
-  "defaultProject": "black-dashboard-angular"
+  "defaultProject": "sample-angular"
 }
