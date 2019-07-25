@@ -1,0 +1,85 @@
+@import "custom-dashboard-theme/custom/functions";
+@import "custom-dashboard-theme/bootstrap/functions";
+
+@import "custom-dashboard-theme/custom/variables";
+@import "custom-dashboard-theme/bootstrap/variables";
+
+@import "custom-dashboard-theme/custom/mixins";
+@import "custom-dashboard-theme/bootstrap/mixins";
+
+ // Bootstrap components
+
+@import "custom-dashboard-theme/bootstrap/root";
+@import "custom-dashboard-theme/bootstrap/reboot";
+@import "custom-dashboard-theme/bootstrap/type";
+@import "custom-dashboard-theme/bootstrap/images";
+@import "custom-dashboard-theme/bootstrap/code";
+@import "custom-dashboard-theme/bootstrap/grid";
+@import "custom-dashboard-theme/bootstrap/tables";
+@import "custom-dashboard-theme/bootstrap/forms";
+@import "custom-dashboard-theme/bootstrap/buttons";
+@import "custom-dashboard-theme/bootstrap/transitions";
+@import "custom-dashboard-theme/bootstrap/dropdown";
+@import "custom-dashboard-theme/bootstrap/button-group";
+@import "custom-dashboard-theme/bootstrap/input-group";
+@import "custom-dashboard-theme/bootstrap/custom-forms";
+@import "custom-dashboard-theme/bootstrap/nav";
+@import "custom-dashboard-theme/bootstrap/navbar";
+@import "custom-dashboard-theme/bootstrap/card";
+@import "custom-dashboard-theme/bootstrap/breadcrumb";
+@import "custom-dashboard-theme/bootstrap/pagination";
+@import "custom-dashboard-theme/bootstrap/badge";
+@import "custom-dashboard-theme/bootstrap/jumbotron";
+@import "custom-dashboard-theme/bootstrap/alert";
+@import "custom-dashboard-theme/bootstrap/progress";
+@import "custom-dashboard-theme/bootstrap/media";
+@import "custom-dashboard-theme/bootstrap/list-group";
+@import "custom-dashboard-theme/bootstrap/close";
+@import "custom-dashboard-theme/bootstrap/modal";
+@import "custom-dashboard-theme/bootstrap/tooltip";
+@import "custom-dashboard-theme/bootstrap/popover";
+@import "custom-dashboard-theme/bootstrap/carousel";
+@import "custom-dashboard-theme/bootstrap/utilities";
+@import "custom-dashboard-theme/bootstrap/print";
+
+ // Custom components
+
+ @import "custom-dashboard-theme/custom/alerts.scss";
+ @import "custom-dashboard-theme/custom/buttons.scss";
+ @import "custom-dashboard-theme/custom/dropdown.scss";
+ @import "custom-dashboard-theme/custom/footer.scss";
+ @import "custom-dashboard-theme/custom/forms.scss";
+ @import "custom-dashboard-theme/custom/images.scss";
+ @import "custom-dashboard-theme/custom/modal.scss";
+ @import "custom-dashboard-theme/custom/navbar.scss";
+ @import "custom-dashboard-theme/custom/type.scss";
+ @import "custom-dashboard-theme/custom/tables";
+ @import "custom-dashboard-theme/custom/checkboxes-radio";
+ @import "custom-dashboard-theme/custom/fixed-plugin";
+ @import "custom-dashboard-theme/custom/sidebar-and-main-panel.scss";
+ @import "custom-dashboard-theme/custom/misc.scss";
+ @import "custom-dashboard-theme/custom/rtl.scss";
+ @import "custom-dashboard-theme/custom/input-group.scss";
+
+
+ // Vendor / Plugins
+
+@import "custom-dashboard-theme/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "custom-dashboard-theme/custom/vendor/plugin-animate-bootstrap-notify.scss";
+
+// light mode
+
+@import "custom-dashboard-theme/custom/white-content.scss";
+
+// Cards
+
+@import 'custom-dashboard-theme/custom/card';
+@import "custom-dashboard-theme/custom/cards/card-chart";
+@import "custom-dashboard-theme/custom/cards/card-map";
+@import "custom-dashboard-theme/custom/cards/card-user";
+@import "custom-dashboard-theme/custom/cards/card-task";
+@import "custom-dashboard-theme/custom/cards/card-plain";
+
+// Angular Differences
+
+@import "custom-dashboard-theme/angular-differences/angular-differences"

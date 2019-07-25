@@ -1,0 +1,95 @@
+<!-- Saving Data Info -->
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-8">
+      <div class=" card">
+        <div class=" card-header">
+          <h5 class=" title">Room Reservation</h5>
+        </div>
+        <div class=" card-body">
+          <form>
+            <div class=" row">
+              <div class=" col-md-4 pr-md-1">
+                <div class=" form-group">
+                  <label> Room Id </label>
+                  <input class=" form-control" placeholder="100..." type="number" name="roomId"
+                    [(ngModel)]="roomInfo.roomId" [disabled]="roomInfo.editableFlag" />
+                </div>
+              </div>
+              <div class=" col-md-4 px-md-1">
+                <div class=" form-group">
+                  <label> Room Type Code </label>
+                  <input class=" form-control" placeholder="hackpro..." type="text" name="roomTypeCode"
+                    [(ngModel)]="roomInfo.roomTypeCode" />
+                </div>
+              </div>
+              <div class=" col-md-4 pl-md-1">
+                <div class=" form-group">
+                  <label> Room Type Name </label>
+                  <input class=" form-control" placeholder="sharing..." type="text" name="roomTypeName"
+                    [(ngModel)]="roomInfo.roomTypeName" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class=" card-footer text-center">
+          <button class=" btn btn-fill btn-danger" type="clear" (click)="clearForm()">Clear</button>
+          <button class=" btn btn-fill btn-danger" type="submit" (click)="saveRoomDetails()">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Grid Info -->
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">Room Details</h4>
+        </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <table class=" table tablesorter" id="">
+              <thead>
+                <tr>
+                  <ng-container *ngFor="let columnName of tableColumnHeaderDef">
+                    <th>{{columnName}}</th>
+                  </ng-container>
+                </tr>
+              </thead>
+
+              <tbody>
+                <ng-container *ngFor="let roomInfo of roomList">
+                  <tr>
+                    <td>
+                      <button class=" btn btn-icon btn-round" (click)="editRoomDetails(roomInfo)">
+                        <i class=" fas fa-edit"> </i>
+                      </button>
+                    </td>
+                    <td>
+                      <button class=" btn btn-icon btn-round" (click)="removeRoomDetails(roomInfo.roomId)">
+                        <i class=" fas fa-trash-alt"> </i>
+                      </button>
+                    </td>
+                    <td>{{roomInfo?.roomId}}</td>
+                    <td> {{roomInfo?.roomTypeCode}}</td>
+                    <td>{{roomInfo?.roomTypeName}}</td>
+                  </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
